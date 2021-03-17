@@ -1,0 +1,168 @@
+body{
+    background:white;
+     margin:0px;
+
+    }
+header{
+  margin:0px;
+  width: 100%;
+  background: white;
+}
+#btn-menu{
+  display: none;
+}
+header label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 15PX;
+  border-right: 1px solid gren;
+}
+header label:hover{
+  cursor: pointer;
+  background: red;
+}
+.navegacion{
+    position: absolute;
+       width: 1000px;
+       display: flex;
+      
+  }
+.navegacion ul{
+       width: 1000px;
+       margin: 2px auto ;
+       background:white; 
+       width: 50px 10px;
+}
+.menu >li {
+      display: inline-block;
+}
+.menu >li a{
+    display: block;
+    padding:15px;
+    color:black;
+    font-family: "Open sans";
+    text-decoration: none;
+    border: 2px solid blue;
+
+}
+.menu li a:hover{
+    color: blue;
+    transition: all .3s;
+    visibility: visible ;
+    background: red; 
+}  
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 60%;
+    opacity: 0;
+    transition: opcity 1.5s;
+}
+.camaras{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    opacity: 0;
+    transition: opcity 1.5s;
+}
+.submenu li a{
+    background: blue;
+    display: block;
+    padding:5px;
+    color: #fff;
+    font-family: "Open sans";
+    text-decoration: none;
+    width: 30%;
+}
+.camaras li a{
+    background: blue;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: "Open sans";
+    text-decoration: none;
+    width: 15%;
+ 
+  }
+    .menu li:hover .submenu{
+      visibility: visible;
+      padding:0px;
+      opacity: 1;
+    }
+    .menu li:hover .camaras{
+      visibility: visible;
+      opacity: 1;
+    }
+    .contenedor{http://localhost/prueba/mobil21.jpg
+      text-align: center;
+      padding:0px;
+            
+    }
+
+
+
+@media (max-width: 768px){
+  header label{
+    display: block;
+  }
+  .navegacion{
+       
+       background:white; 
+       width: 50px 10px;
+       
+      
+  }
+  .navegacion ul{
+       position: absolute;
+       width: 1000px;
+       margin-left:-500%;
+        flex-direction: column;
+       display: block;
+       transition: all 0.5s;
+       position: absolute;
+  }
+  
+  .menu li{
+    border-top: 1px solid #fff;
+    color: white;
+  }
+  #btn-menu:checked ~.navegacion ul{
+    margin: 0;
+  }
+  .submenu{
+    position: absolute;
+    background: #333333;
+    width: 60%;
+    margin-left:-1000%;
+    opacity: 0;
+    transition: opcity 1.5s;
+    
+  }
+  .camaras{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+   
+    opacity: 0;
+    transition: opcity 1.5s;
+  }
+  .submenu li a{
+       background: blue;
+       display: block;
+       padding:5px;
+       color: #fff;
+       font-family: "Open sans";
+      text-decoration: none;
+       width: 20%;
+   }
+  .camaras li a{
+    background: blue;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: "Open sans";
+    text-decoration: none;
+    width: 15%;
+  }
+}

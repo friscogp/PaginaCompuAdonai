@@ -1,0 +1,37 @@
+<html>
+<head>      
+<script language="JavaScript">  
+    function calcular()
+    {
+        var cantidad=  parseFloat( document.getElementById("cantidad").value);   
+        var vlrunitario = parseFloat( document.getElementById("vlrunitario").value);            
+        var total = document.getElementById("total").value = cantidad*vlrunitario;              
+    }   
+</script>   
+</head>
+ 
+ 
+<body onload="calcular();">
+ 
+<form method="POST" action="tu_script.php" name="form">
+<tbody>
+<tr>
+<td>Id producto:</td>
+<td><input type="text" name="id_product" value="arroz" readonly size="3"></td>
+</tr>
+<tr>
+<td><input type="text" id="cantidad" name="cantidad" value="100" size="5"></td>
+<td>Vlr unitario</td>
+<td><input type="text" id="vlrunitario" name="vlrunitario" value="100" size="5" onkeyup="calcular();"></td>
+
+
+<tr>
+<td>Total:</td>
+<td><input type="text" name="total" value="" id="total" size="3"></td>
+
+</tr>
+ 
+</body>
+ 
+ 
+</html>

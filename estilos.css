@@ -1,0 +1,93 @@
+
+body{
+    background:white;
+    }
+header{
+  margin:0px;
+  padding:0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10PX;
+  border-right: 1px solid #fff;
+}
+header label:hover{
+  cursor: pointer;
+  background: red;
+}
+    .navegacion ul{
+       width: 1000px;
+       margin: 2px auto ;
+       background:white; 
+       width: 50px 10px;
+   }
+     .menu >li {
+      display: block;
+  }
+  .menu >li >a {
+    display: block;
+    padding:15px;
+    color:black;
+    font-family: "Open sans";
+    text-decoration: none;
+    border: 2px solid blue;
+  }
+  
+  .submenu{
+    position: absolute;
+    background: #333333;
+    width: 60%;
+    opacity: 0;
+    transition: opcity 1.5s;
+    
+  }
+  .camaras{
+    position: absolute;
+    background: #333333;
+    width: 120%;
+   
+    opacity: 0;
+    transition: opcity 1.5s;
+  }
+    .submenu li a{
+    background: blue;
+    display: block;
+    padding:5px;
+    color: #fff;
+    font-family: "Open sans";
+    text-decoration: none;
+    width: 20%;
+    
+    
+  }
+  .camaras li a{
+    background: blue;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: "Open sans";
+    text-decoration: none;
+    width: 15%;
+    
+    
+  }
+    .menu li:hover .submenu{
+      visibility: visible;
+      padding:0px;
+      opacity: 1;
+    }
+    .menu li:hover .camaras{
+      visibility: visible;
+      opacity: 1;
+    }
+    .contenedor{
+      text-align: center;
+      padding:0px;
+            
+    }
+    }
