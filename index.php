@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Menu Principal</title>
+	<title>CompuAdonai</title>
 	<meta charset="utf-8">
 	<meta reset"viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1">
 	<link rel="stylesheet" href="estilos2.css">
